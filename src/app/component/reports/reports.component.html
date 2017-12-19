@@ -1,0 +1,41 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="card card-plain">
+				<div class="header">
+					<h4 class="title">List all Reports</h4>
+				</div>
+				<div class="content table-responsive table-full-width">
+					<table class="table table-hover table-striped">
+						<thead>
+							<th>dispatchId</th>
+							<th>fileName</th>
+							<th>fileType</th>
+							<th>Start</th>
+							<th>End</th>
+							<th>Autor</th>
+							
+						</thead>
+						<tbody>
+							<tr *ngFor="let item of list">
+								<td>{{item.dispatchId}}</td>
+								<td>{{item.fileName}}</td>
+								<td>{{item.fileType}}</td>
+								<td>{{item.startTime}}</td>
+								<td>{{item.endTime}}</td>
+								<td>{{item.author.name}}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<footer class="panel-footer">
+					<div class="row">
+						<div class="col-xs-12 col-sm-812 col-md-12 text-right text-center-xs">
+							<app-pagination [limit]="pageSize" [size]="totalRecords" [currentPage]="page+1" (pageChange)="onPageChange($event)"></app-pagination>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+	</div>
+</div>

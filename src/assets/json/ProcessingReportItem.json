@@ -1,0 +1,42 @@
+[
+	{
+		"dispatchId":1,
+		"fileName":"arquivo_1_x.docx",
+		"fileType":"DOCX",
+		"captureDevice":"DESKTOP",
+		"startTime":"2017-12-19T13:59:00",
+		"endTime":"2017-12-19T14:59:00",
+		"author":{
+			"name": "TESTE OPERADOR 1",
+			"login":"teste1.operador",
+			"password":"123",
+			"email": "operador1@mail.net",
+			"isAdmin":"true",
+			"clientConfig": {
+				"name":"Documento WORD",
+				"fileTypes":["DOCX"],
+				"captureDevices":["DESKTOP"]
+			}
+		}
+	},
+	{
+		"dispatchId":2,
+		"fileName":"arquivo_1_t.txt",
+		"fileType":"TXT",
+		"captureDevice":"MOBILE",
+		"startTime":"2017-12-09T13:59:00",
+		"endTime":"2017-12-09T14:59:00",
+		"author":{
+			"name": "TESTE OPERADOR 2",
+			"login":"teste2.operador",
+			"password":"123",
+			"email": "operador2@mail.net",
+			"isAdmin":"false",
+			"clientConfig": {
+				"name":"Documento TXT",
+				"fileTypes":["TXT"],
+				"captureDevices":["MOBILE"]
+			}
+		}
+	}
+]

@@ -1,0 +1,50 @@
+[
+	{
+		"name": "TESTE OPERADOR 1",
+		"login":"teste1.operador",
+		"password":"123",
+		"email": "operador1@mail.net",
+		"isAdmin":"true",
+		"clientConfig": {
+			"name":"Documento WORD",
+			"fileTypes":["DOCX"],
+			"captureDevices":["DESKTOP"]
+		}
+	},
+	{
+		"name": "TESTE OPERADOR 2",
+		"login":"teste2.operador",
+		"password":"123",
+		"email": "operador2@mail.net",
+		"isAdmin":"false",
+		"clientConfig": {
+			"name":"Documento TXT",
+			"fileTypes":["TXT"],
+			"captureDevices":["MOBILE"]
+		}
+	},
+	{
+		"name": "TESTE OPERADOR 3",
+		"login":"teste3.operador",
+		"password":"123",
+		"email": "operador3@mail.net",
+		"isAdmin":"true",
+		"clientConfig": {
+			"name":"Documento PDF",
+			"fileTypes":["PDF"],
+			"captureDevices":["WEB"]
+		}
+	},
+	{
+		"name": "TESTE OPERADOR 4",
+		"login":"teste4.operador",
+		"password":"123",
+		"email": "operador4@mail.net",
+		"isAdmin":"true",
+		"clientConfig": {
+			"name":"Documentos WORD/TXT/PDF",
+			"fileTypes":["WORD","TXT","PDF"],
+			"captureDevices":["DESKTOP", "MOBILE", "WEB"]
+		}
+	}
+]

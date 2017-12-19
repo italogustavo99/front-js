@@ -1,0 +1,34 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="card card-plain">
+				<div class="header">
+					<h4 class="title">List all Operators</h4>
+				</div>
+				<div class="content table-responsive table-full-width">
+					<table class="table table-hover table-striped">
+						<thead>
+							<th>Username</th>
+							<th>Full name</th>
+							<th>E-mail</th>
+						</thead>
+						<tbody>
+							<tr *ngFor="let item of list">
+								<td>{{item.name}}</td>
+								<td>{{item.login}}</td>
+								<td>{{item.email}}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<footer class="panel-footer">
+					<div class="row">
+						<div class="col-xs-12 col-sm-812 col-md-12 text-right text-center-xs">
+							<app-pagination [limit]="pageSize" [size]="totalRecords" [currentPage]="page+1" (pageChange)="onPageChange($event)"></app-pagination>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+	</div>
+</div>
